@@ -92,7 +92,8 @@ html, body{
 }
 
 .form-wrapper .card{
-    width: 330px;
+    width: 310px;
+    margin-left: 20px;
 }
 
 .form-wrapper .btn-block{
