@@ -172,7 +172,7 @@ router.post('/forgot-password', (req, res) => {
 
              const secret = JWT_SECRET + user.password;
              const token = jwt.sign(payload, secret, {expiresIn: '15m'}); 
-             const link = `http://localhost:5000/users/reset-password/${user.id}/${token}`;
+             const link = `https://triviamania.herokuapp.com/users/reset-password/${user.id}/${token}`;
              console.log(link);
 
              // start send link to email address

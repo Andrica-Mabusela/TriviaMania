@@ -64,7 +64,7 @@ app.use('/users', require('./routes/users'))
 app.use('/trivia', require('./routes/trivia'))
 
 // create a port
-const PORT = process.env.PORT || 4000
+const PORT = process.env.PORT || 5000
 
 // listen for requests
 app.listen(PORT, () => console.log(`server Started on port ${PORT}`))
