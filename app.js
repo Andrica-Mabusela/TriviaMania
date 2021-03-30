@@ -4,6 +4,8 @@ const session = require('express-session')
 const flash = require('connect-flash')
 const mongoose = require('mongoose')
 const passport = require('passport')
+const path = require('path')
+const dotenv = require('dotenv')
 
 
 //connect to the database
@@ -20,6 +22,12 @@ require('./config/passport-twitter')(passport)
 
 // create an express
 const app = express()
+
+
+
+// config env vars
+dotenv.config({path: './config.env'})
+
 
 // EJS STUFF
 // app.use(expressLayouts)

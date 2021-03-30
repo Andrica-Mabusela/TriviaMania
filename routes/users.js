@@ -181,8 +181,8 @@ router.post('/forgot-password', (req, res) => {
                 port: 465,
                 secure: true,
                 auth: {
-                    user: 'programmerandy420',
-                    pass: 'Andrica1@google'
+                    user: process.env.user,
+                    pass: process.env.pass
                 }
             })
 
