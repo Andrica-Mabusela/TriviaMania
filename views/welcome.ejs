@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TriviaMania | Welcome</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div>
+        <!-- start webpage content  -->
+
+   <!-- include navbar -->
+   <%- include('partials/nav') %>
+
+<!--start banner section  -->
+<div class="banner">
+    <video autoplay loop muted>
+        <source src="video/video2.mp4" type="video/mp4" />
+    </video>
+    <div class="banner-info">
+        <h3>Are You Ready For A Quiz?</h3>
+        <p>
+            have fun with learning.
+        </p>
+    </div>
+</div>
+
+<!--end banner section  -->
+<br><br>
+<!-- start about section  -->
+<div class="container mt-4 about-section" id="about">
+    <h2 class="about-header">About</h2>
+
+<div class="about-section-info m-4">
+    <p class="font-weight-light">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates soluta aut doloremque dolores voluptate magni qui provident tempore a, aperiam dolorem alias iure necessitatibus pariatur perspiciatis! Eaque, praesentium porro! Officia?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates soluta aut doloremque dolores voluptate magni qui provident tempore a, aperiam dolorem alias iure necessitatibus pariatur perspiciatis! Eaque, praesentium porro! Officia?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates soluta aut doloremque dolores voluptate magni qui provident tempore a, aperiam dolorem alias iure necessitatibus pariatur perspiciatis! Eaque, praesentium porro! Officia?
+    </p>
+
+</div>
+
+</div>
+
+<!-- end about section  -->
+
+<br><br>
+
+<!-- start popular quizes  -->
+<div class="container">
+    <h2 class="mb-4 quizes-header">Popular Quizes</h2>
+<br>
+    <div id="quizes">
+
+        <div class="card shadow-lg">
+            <div class="card-heading">
+                <h4>Trivia Mania</h4>
+
+                <div class="circle shadow-lg">
+                    <span>Music</span>
+                </div>
+
+            </div>
+ 
+            <div class="card-content text-center">
+
+                <div class="card-inner-content">
+                    <p>
+                        This quiz consists of 20 music questions and you can choose one correct answer from the possible answers provided.
+
+                    </p>
+                    <p>
+                        <a href="/trivia/music">play quiz</a>
+                    </p>
+                    
+                </div>
+               
+            </div>
+        </div>
+
+        <div class="card shadow-lg">
+            <div class="card-heading">
+                <h4>Trivia Mania</h4>
+
+                <div class="circle shadow-lg">
+                    <span>Movies</span>
+                </div>
+
+            </div>
+  
+            <div class="card-content text-center">
+                <div class="card-inner-content">
+                   <p>
+                    This quiz consists of 20 movies questions and you can choose one correct answer from the possible answers provided.
+
+                    <p>
+                        <a href="/trivia/movies">play quiz</a>
+                    </p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="card shadow-lg">
+            <div class="card-heading">
+                <h4>Trivia Mania</h4>
+
+                <div class="circle shadow-lg">
+                    <span>General Knowledge</span>
+                </div>
+
+            </div>
+        
+            <div class="card-content text-center">
+                <div class="card-inner-content">
+                    <p> 
+                        This quiz consists of 20 general knowledge questions and you can choose one correct answer from the possible answers provided.
+                    <p>
+                         <a href="/trivia/general">play quiz</a>
+                     </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow-lg">
+            <div class="card-heading">
+                <h4>Trivia Mania</h4>
+
+                <div class="circle shadow-lg">
+                    <span>Video Games</span>
+                </div>
+
+            </div>
+         
+            <div class="card-content text-center">
+                <div class="card-inner-content">
+                    <p> 
+                        This quiz consists of 20 video games questions and you can choose one correct answer from the possible answers provided.
+                    <p>
+                         <a href="/trivia/games">play quiz</a>
+                     </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow-lg">
+            <div class="card-heading">
+                <h4>Trivia Mania</h4>
+
+                <div class="circle shadow-lg">
+                    <span>Politics</span>
+                </div>
+            </div>
+           
+            <div class="card-content text-center">
+                <div class="card-inner-content">
+                    <p> 
+                        This quiz consists of 20 politics questions and you can choose one correct answer from the possible answers provided.
+                    <p>
+                         <a href="/trivia/politics">play quiz</a>
+                     </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow-lg">
+            <div class="card-heading">
+                <h4>Trivia Mania</h4>
+
+                <div class="circle shadow-lg">
+                    <span>Television</span>
+                </div>
+
+            </div>
+            
+            <div class="card-content text-center">
+                <div class="card-inner-content">
+                    <p> 
+                        This quiz consists of 20 television questions and you can choose one correct answer from the possible answers provided.
+                    <p>
+                         <a href="/trivia/television">play quiz</a>
+                     </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!-- end popular quizes  -->
+<br><br>
+<br><br>
+
+<footer class="container-fluid p-4">
+    <h5 class="font-weight-light text-center">Copyright &copy; 
+        <script>
+            let x = new Date()
+            document.write(x.getFullYear() )
+        </script>
+    </h5>
+</footer>
+
+
+
+        <!-- end webpage content  -->
+
+
+    </div>
+    
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <!-- <script src="js/custom.js"></script> -->
+</body>
+</html>

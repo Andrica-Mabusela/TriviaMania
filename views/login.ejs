@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js & Passport App</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="bg-light text-center web-header">
+    <h4>
+      <span style="color: red;">Trivia</span>
+       <span style="margin-left: -4px;">Mania</span>
+    </h4>
+    <span class="lead font-weight-light" style="color: tomato;">Dive into the world of trivia</span>
+  </div>
+
+    <div>
+
+      <div class="row mt-5 form-wrapper">
+        <div class="">
+          
+          <div class="card card-body login-card shadow-lg">
+            <h1 class="text-center mb-4"><i class="fas fa-user"></i>  Login</h1>
+           
+            <%- include ('./partials/messages.ejs') %>
+            <p>Log in to play trivia games</p>
+            <form action="/users/login" method="POST">
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Enter Email"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  class="form-control"
+                  placeholder="Enter Password"
+                />
+              </div>
+              <button type="submit" class="btn btn-block">Login</button>
+            </form>
+            <p class="lead text-center mt-4">
+              No Account? <a href="/users/register" style="color: red;">Register</a>
+            </p>
+            <p class="text-center">
+              <a href="/users/forgot-password" style="color: red;">Forgot Password?</a>
+            </p>
+    
+            <!-- OAUTH REGISTER SYSTEM  -->
+            <div class="oauth-wrapper text-center">
+              <hr class="my-2">
+                <p class="text-center">OR</p>
+                <div>
+                  <!-- <a class="btn btn-block facebook-sign-in" href="/users/facebook"><i class="fab fa-facebook"></i>  <span>| sign in with facebook</span></a> -->
+                  <!-- <a class="btn btn-block twitter-sign-in" href="/users/twitter"><i class="fab fa-twitter"></i>  <span>| sign in with twitter</span></a> -->
+                </div>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
